@@ -26,7 +26,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 if not BOT_TOKEN:
     raise RuntimeError("BOT_TOKEN не найден. Проверь файл .env")
 ADMIN_ID = 402068020
-DATA_FILE = "slots.json"
+
 
 YANDEX_MAP_URL = "https://yandex.ru/maps?whatshere%5Bpoint%5D=29.913778445829795%2C59.779631849357564&whatshere%5Bzoom%5D=18.93999&ll=29.913778445829795%2C59.77963184899495&z=18.93999&si=ba34h54bqx94ftdxtzcmghjhyr"
 PHONE_TEXT = "+7 921 441-77-88"
