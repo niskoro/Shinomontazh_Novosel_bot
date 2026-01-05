@@ -18,7 +18,10 @@ from aiogram.filters import Command
 # ================= НАСТРОЙКИ =================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 402068020
-DATA_FILE = "slots.json"
+DATA_DIR = "/data"
+DATA_FILE = os.path.join(DATA_DIR, "slots.json")
+
+os.makedirs(DATA_DIR, exist_ok=True)
 
 if not BOT_TOKEN:
     raise RuntimeError("BOT_TOKEN не найден. Проверь файл .env")
